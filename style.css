@@ -1,0 +1,208 @@
+/* 
+Vade, Reprise
+Main stylesheet
+*/
+
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- Layout ---------- */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+
+/* ---------- Header ---------- */
+
+/* ---------- Header ---------- */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 130px;
+    gap: 25px;
+}
+
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+nav {
+    text-align: right;
+}
+
+
+nav a {
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+/* ---------- Main Content ---------- */
+
+main {
+    min-height: 60vh;
+}
+
+.content {
+    width: 45%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+
+.content p {
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+
+/* ---------- Music Page ---------- */
+
+.release-year {
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.release {
+    margin-bottom: 8px;
+}
+
+
+/* ---------- Interviews ---------- */
+
+.interview-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.interview-date {
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.question {
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.answer {
+    margin-bottom: 35px;
+}
+
+
+/* ---------- Contact ---------- */
+
+.email {
+    margin-top: 10px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    margin-top: 150px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width: 700px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 30px 25px;
+    }
+
+
+    header {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+
+    nav {
+        text-align: left;
+        margin-top: 25px;
+    }
+
+
+    nav a {
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+}
