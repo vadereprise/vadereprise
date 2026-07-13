@@ -92,6 +92,38 @@ main {
 }
 
 
+/* About page layout: photo left, text to the right, vertically centered */
+.about-wrap {
+    display: flex;
+    align-items: center; /* center photo vertically with the text block */
+    gap: 30px;
+    overflow: visible;
+}
+
+.about-wrap .photo {
+    flex: 0 0 60%; /* make left column even larger so image can be bigger and sit more left */
+    display: flex;
+    justify-content: center; /* center image horizontally in the left column */
+    align-items: center;
+    overflow: visible;
+}
+
+.about-wrap .photo img {
+    width: 130%; /* scale up noticeably */
+    height: auto;
+    max-height: 95vh; /* allow very large images */
+    object-fit: cover;
+    border-radius: 4px;
+    transform: translateX(-22%); /* push image further left */
+    transition: transform 180ms ease, width 180ms ease;
+}
+
+.about-wrap .content {
+    flex: 1 1 55%;
+    margin: 0;
+}
+
+
 .content p {
     margin-bottom: 25px;
 }
@@ -211,6 +243,26 @@ footer {
     .content {
         width: 100%;
         margin: 0;
+    }
+
+    /* Stack photo above text on small screens */
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about-wrap .photo {
+        order: -1;
+        width: 100%;
+    }
+
+    .about-wrap .photo img {
+        max-width: 80%;
+        height: auto;
+        transform: none;
+        width: 90%;
     }
 
 }
