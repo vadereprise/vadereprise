@@ -66,9 +66,9 @@ header {
 
 
 .logo {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: normal;
     font-size: 18px;
     color: #218717;
 }
